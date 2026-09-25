@@ -157,19 +157,6 @@
     });
   }
 
-  /* ---------- Появление при прокрутке ---------- */
-  var reveals = $$('.reveal');
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
-      });
-    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.08 });
-    reveals.forEach(function (el) { io.observe(el); });
-  } else {
-    reveals.forEach(function (el) { el.classList.add('is-in'); });
-  }
-
   /* ==========================================================================
      Единая форма заявки. Никуда не отправляет данные — только демо-состояние успеха.
      ========================================================================== */
@@ -369,6 +356,7 @@
 
   // Поля калькулятора строим из тех же данных
   var runSel = $('#calc-run');
+  runSel.innerHTML = ''; // в разметке — те же тиражи для работы без JS
   ['digital', 'offset'].forEach(function (m) {
     var g = document.createElement('optgroup');
     g.label = PRICES[m].label;

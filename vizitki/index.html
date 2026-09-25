@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap">
-  <link rel="preload" as="image" href="../assets/img/vizitki/hero-1.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="../assets/img/vizitki/hero-1.webp" fetchpriority="high" media="(min-width: 1024px)">
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="../assets/js/main.js" defer></script>
@@ -102,12 +102,12 @@
       <a class="nav__link" href="../#contacts">Контакты</a>
     </nav>
     <div class="header__contacts">
-      <a class="header__phone" href="tel:+74957280956">8 (495) 728-09-56</a>
+      <div class="header__phone-wrap"><a class="header__phone" href="tel:+74957280956">8 (495) 728-09-56</a><span class="header__hours">Пн–Пт 10:00–19:00</span></div>
       <a class="icon-btn icon-btn--call" href="tel:+74957280956" aria-label="Позвонить: 8 (495) 728-09-56"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></a>
-      <a class="icon-btn" href="https://t.me/Stolitsaprint" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg></a>
-      <a class="icon-btn" href="https://max.ru/u/f9LHodD0cOImZH7Z6fxQsS6uw_I-IrdhSO24rC0mJl4U2F6npe6dw1zh8OI" target="_blank" rel="noopener" aria-label="Написать в MAX"><span class="icon-btn__txt" aria-hidden="true">MAX</span></a>
+      <a class="icon-btn" href="https://t.me/Stolitsaprint" target="_blank" rel="noopener" aria-label="Написать в Telegram" title="Telegram"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg></a>
+      <a class="icon-btn" href="https://max.ru/u/f9LHodD0cOImZH7Z6fxQsS6uw_I-IrdhSO24rC0mJl4U2F6npe6dw1zh8OI" target="_blank" rel="noopener" aria-label="Написать в MAX" title="MAX"><svg class="i" aria-hidden="true"><use href="#i-msg"/></svg></a>
     </div>
-    <a class="btn btn--primary btn--sm header__cta" href="#calc-card">Рассчитать заказ</a>
+    <a class="btn btn--primary btn--sm header__cta" href="#calc-card">Рассчитать стоимость</a>
     <button class="icon-btn burger" id="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
   </div>
 
@@ -195,9 +195,9 @@
     </ul>
     <div class="mnav__foot">
       <a class="header__phone" href="tel:+74957280956">8 (495) 728-09-56</a>
-      <a class="btn btn--primary btn--block" href="#calc-card">Рассчитать заказ</a>
+      <a class="btn btn--primary btn--block" href="#calc-card">Рассчитать стоимость</a>
       <a class="btn btn--secondary btn--block" href="https://t.me/Stolitsaprint" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg>Telegram</a>
-      <a class="btn btn--secondary btn--block" href="https://max.ru/u/f9LHodD0cOImZH7Z6fxQsS6uw_I-IrdhSO24rC0mJl4U2F6npe6dw1zh8OI" target="_blank" rel="noopener">MAX</a>
+      <a class="btn btn--secondary btn--block" href="https://max.ru/u/f9LHodD0cOImZH7Z6fxQsS6uw_I-IrdhSO24rC0mJl4U2F6npe6dw1zh8OI" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-msg"/></svg>MAX</a>
     </div>
   </nav>
 </div>
@@ -213,10 +213,8 @@
         </ol>
       </nav>
       <div class="phero__head">
-        <div>
-          <h1 id="page-title">Печать визиток в&nbsp;Москве</h1>
-          <p class="phero__lead">От 375&nbsp;₽ за 100&nbsp;шт., срок — от&nbsp;1&nbsp;дня. Небольшие тиражи печатаем цифрой, от&nbsp;2000&nbsp;шт. — офсетом, это дешевле.</p>
-        </div>
+        <h1 id="page-title">Печать визиток в&nbsp;Москве</h1>
+        <p class="phero__lead">От 375&nbsp;₽ за 100&nbsp;шт., срок — от&nbsp;1&nbsp;дня. Небольшие тиражи печатаем цифрой, от&nbsp;2000&nbsp;шт. — офсетом, это дешевле.</p>
         <a class="rating-badge" href="https://yandex.ru/maps/org/stolichnaya_pechat/109474708902/" target="_blank" rel="noopener">
           <span class="stars" aria-hidden="true"><svg class="i"><use href="#i-star"/></svg></span>
           <span><strong>5,0</strong> · 621 отзыв на Яндекс Картах</span>
@@ -229,11 +227,11 @@
             <img id="pgal-main" src="../assets/img/vizitki/hero-1.webp" width="817" height="544" alt="Визитка на бордовом картоне с тиснением золотой фольгой" fetchpriority="high" decoding="async">
           </div>
           <ul class="pgal__thumbs" aria-label="Другие фото">
-            <li><button class="pgal__thumb" type="button" aria-pressed="true" data-src="../assets/img/vizitki/hero-1.webp" data-alt="Визитка на бордовом картоне с тиснением золотой фольгой"><img src="../assets/img/vizitki/thumb-1.webp" width="240" height="160" alt="Фото 1: визитка с тиснением фольгой" loading="lazy"></button></li>
-            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-2.webp" data-alt="Чёрная визитка кафе-бара с тиснением фольгой"><img src="../assets/img/vizitki/thumb-2.webp" width="240" height="160" alt="Фото 2: чёрная визитка с тиснением" loading="lazy"></button></li>
-            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-3.webp" data-alt="Белая визитка с конгревным гербом"><img src="../assets/img/vizitki/thumb-3.webp" width="240" height="160" alt="Фото 3: визитка с конгревом" loading="lazy"></button></li>
-            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-4.webp" data-alt="Чёрная визитка с золотым логотипом"><img src="../assets/img/vizitki/thumb-4.webp" width="240" height="160" alt="Фото 4: чёрная визитка с золотым логотипом" loading="lazy"></button></li>
-            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-5.webp" data-alt="Синяя визитка с тиснением герба МЧС России"><img src="../assets/img/vizitki/thumb-5.webp" width="240" height="160" alt="Фото 5: визитка МЧС России" loading="lazy"></button></li>
+            <li><button class="pgal__thumb" type="button" aria-pressed="true" data-src="../assets/img/vizitki/hero-1.webp" data-alt="Визитка на бордовом картоне с тиснением золотой фольгой"><img decoding="async" src="../assets/img/vizitki/thumb-1.webp" width="240" height="160" alt="Фото 1: визитка с тиснением фольгой"></button></li>
+            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-2.webp" data-alt="Чёрная визитка кафе-бара с тиснением фольгой"><img decoding="async" src="../assets/img/vizitki/thumb-2.webp" width="240" height="160" alt="Фото 2: чёрная визитка с тиснением"></button></li>
+            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-3.webp" data-alt="Белая визитка с конгревным гербом"><img decoding="async" src="../assets/img/vizitki/thumb-3.webp" width="240" height="160" alt="Фото 3: визитка с конгревом"></button></li>
+            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-4.webp" data-alt="Чёрная визитка с золотым логотипом"><img decoding="async" src="../assets/img/vizitki/thumb-4.webp" width="240" height="160" alt="Фото 4: чёрная визитка с золотым логотипом"></button></li>
+            <li><button class="pgal__thumb" type="button" aria-pressed="false" data-src="../assets/img/vizitki/hero-5.webp" data-alt="Синяя визитка с тиснением герба МЧС России"><img decoding="async" src="../assets/img/vizitki/thumb-5.webp" width="240" height="160" alt="Фото 5: визитка МЧС России"></button></li>
           </ul>
           <ul class="facts pgal__facts">
             <li><svg class="i" aria-hidden="true"><use href="#i-factory"/></svg>Своё производство</li>
@@ -250,7 +248,7 @@
           <form class="calc__form" id="calc" aria-label="Расчёт стоимости визиток">
             <div class="field">
               <label for="calc-run">Тираж</label>
-              <select class="input select" id="calc-run" name="run"></select>
+              <select class="input select" id="calc-run" name="run"><optgroup label="Цифровая печать"><option value="100">100 шт.</option><option value="200">200 шт.</option><option value="300">300 шт.</option><option value="400">400 шт.</option><option value="500" selected>500 шт.</option><option value="600">600 шт.</option><option value="700">700 шт.</option><option value="800">800 шт.</option><option value="900">900 шт.</option><option value="1000">1&nbsp;000 шт.</option></optgroup><optgroup label="Офсетная печать"><option value="2000">2&nbsp;000 шт.</option><option value="3000">3&nbsp;000 шт.</option><option value="4000">4&nbsp;000 шт.</option><option value="5000">5&nbsp;000 шт.</option><option value="6000">6&nbsp;000 шт.</option><option value="8000">8&nbsp;000 шт.</option><option value="10000">10&nbsp;000 шт.</option><option value="20000">20&nbsp;000 шт.</option></optgroup></select>
               <p class="calc__method" id="calc-method">Способ печати: <b>цифровая</b> — выбирается по тиражу</p>
             </div>
             <fieldset>
@@ -311,16 +309,16 @@
         </div>
       </div>
       <ul class="types">
-        <li class="type reveal"><img src="../assets/img/vizitki/type-01.webp" width="170" height="170" alt="Срочные визитки — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Срочная печать</a></h3><p class="type__price">от <strong>1 дня</strong></p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-02.webp" width="170" height="170" alt="Визитки с шелкографией — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С шелкографией</a></h3><p class="type__price">от <strong>23&nbsp;₽</strong>/шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-03.webp" width="170" height="170" alt="Визитки с тиснением — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С тиснением</a></h3><p class="type__price">от <strong>10&nbsp;₽</strong>/шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-04.webp" width="170" height="170" alt="Визитки на дизайнерской бумаге — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>На дизайнерской бумаге</a></h3><p class="type__price">от <strong>850&nbsp;₽</strong>/100&nbsp;шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-05.webp" width="170" height="170" alt="Визитки с фигурной вырубкой — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С вырубкой</a></h3><p class="type__price">от <strong>23&nbsp;₽</strong>/шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-06.webp" width="170" height="170" alt="Пластиковые визитки — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>На пластике</a></h3><p class="type__price">от <strong>10&nbsp;₽</strong>/шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-07.webp" width="170" height="170" alt="Оригинальные визитки — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Оригинальные</a></h3><p class="type__price">от <strong>20&nbsp;₽</strong>/шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-08.webp" width="170" height="170" alt="Визитки с конгревом — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С конгревом</a></h3><p class="type__price">от <strong>27&nbsp;₽</strong>/шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-09.webp" width="170" height="170" alt="Кашированные визитки — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Кашированные</a></h3><p class="type__price">от <strong>20&nbsp;₽</strong>/шт.</p></div></li>
-        <li class="type reveal"><img src="../assets/img/vizitki/type-10.webp" width="170" height="170" alt="Ламинированные визитки — пример работы" loading="lazy"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Ламинированные</a></h3><p class="type__price">от <strong>5,40&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-01.webp" width="170" height="170" alt="Срочные визитки — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Срочная печать</a></h3><p class="type__price">от <strong>1 дня</strong></p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-02.webp" width="170" height="170" alt="Визитки с шелкографией — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С шелкографией</a></h3><p class="type__price">от <strong>23&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-03.webp" width="170" height="170" alt="Визитки с тиснением — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С тиснением</a></h3><p class="type__price">от <strong>10&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-04.webp" width="170" height="170" alt="Визитки на дизайнерской бумаге — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>На дизайнерской бумаге</a></h3><p class="type__price">от <strong>850&nbsp;₽</strong>/100&nbsp;шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-05.webp" width="170" height="170" alt="Визитки с фигурной вырубкой — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С вырубкой</a></h3><p class="type__price">от <strong>23&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-06.webp" width="170" height="170" alt="Пластиковые визитки — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>На пластике</a></h3><p class="type__price">от <strong>10&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-07.webp" width="170" height="170" alt="Оригинальные визитки — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Оригинальные</a></h3><p class="type__price">от <strong>20&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-08.webp" width="170" height="170" alt="Визитки с конгревом — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>С конгревом</a></h3><p class="type__price">от <strong>27&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-09.webp" width="170" height="170" alt="Кашированные визитки — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Кашированные</a></h3><p class="type__price">от <strong>20&nbsp;₽</strong>/шт.</p></div></li>
+        <li class="type"><img decoding="async" src="../assets/img/vizitki/type-10.webp" width="170" height="170" alt="Ламинированные визитки — пример работы"><div class="type__body"><h3 class="type__name"><a href="#" data-stub>Ламинированные</a></h3><p class="type__price">от <strong>5,40&nbsp;₽</strong>/шт.</p></div></li>
       </ul>
     </div>
   </section>
@@ -344,11 +342,11 @@
       <div class="pcards" id="pcards" aria-live="polite"></div>
       <div class="price-block">
         <h3>Цифровая печать <small>тиражи от 100 до 2000 шт.</small></h3>
-        <div class="table-wrap" id="ptable-digital"></div>
+        <div class="table-wrap" id="ptable-digital"><table class="ptable"><caption class="visually-hidden">Цифровая печать, визитки 90 × 50 мм, цена за тираж в рублях</caption><thead><tr><th scope="col">Тираж, шт.</th><th scope="col">100</th><th scope="col">200</th><th scope="col">300</th><th scope="col">400</th><th scope="col">500</th><th scope="col">600</th><th scope="col">700</th><th scope="col">800</th><th scope="col">900</th><th scope="col">1&nbsp;000</th><th scope="col">2&nbsp;000</th></tr></thead><tbody><tr><th scope="row">1+0<small>чёрно-белая с одной стороны</small></th><td data-method="digital" data-color="1+0" data-run="100">375</td><td data-method="digital" data-color="1+0" data-run="200">675</td><td data-method="digital" data-color="1+0" data-run="300">975</td><td data-method="digital" data-color="1+0" data-run="400">1&nbsp;275</td><td data-method="digital" data-color="1+0" data-run="500">1&nbsp;575</td><td data-method="digital" data-color="1+0" data-run="600">1&nbsp;875</td><td data-method="digital" data-color="1+0" data-run="700">2&nbsp;250</td><td data-method="digital" data-color="1+0" data-run="800">2&nbsp;550</td><td data-method="digital" data-color="1+0" data-run="900">2&nbsp;850</td><td data-method="digital" data-color="1+0" data-run="1000">3&nbsp;150</td><td data-method="digital" data-color="1+0" data-run="2000">6&nbsp;300</td></tr><tr><th scope="row">4+0<small>цветная с одной стороны</small></th><td data-method="digital" data-color="4+0" data-run="100">400</td><td data-method="digital" data-color="4+0" data-run="200">720</td><td data-method="digital" data-color="4+0" data-run="300">1&nbsp;040</td><td data-method="digital" data-color="4+0" data-run="400">1&nbsp;360</td><td data-method="digital" data-color="4+0" data-run="500">1&nbsp;680</td><td data-method="digital" data-color="4+0" data-run="600">2&nbsp;000</td><td data-method="digital" data-color="4+0" data-run="700">2&nbsp;400</td><td data-method="digital" data-color="4+0" data-run="800">2&nbsp;720</td><td data-method="digital" data-color="4+0" data-run="900">3&nbsp;040</td><td data-method="digital" data-color="4+0" data-run="1000">3&nbsp;360</td><td data-method="digital" data-color="4+0" data-run="2000">6&nbsp;720</td></tr><tr><th scope="row">4+4<small>цветная с двух сторон</small></th><td data-method="digital" data-color="4+4" data-run="100">480</td><td data-method="digital" data-color="4+4" data-run="200">855</td><td data-method="digital" data-color="4+4" data-run="300">1&nbsp;235</td><td data-method="digital" data-color="4+4" data-run="400">1&nbsp;615</td><td data-method="digital" data-color="4+4" data-run="500">1&nbsp;995</td><td data-method="digital" data-color="4+4" data-run="600">2&nbsp;375</td><td data-method="digital" data-color="4+4" data-run="700">2&nbsp;850</td><td data-method="digital" data-color="4+4" data-run="800">3&nbsp;230</td><td data-method="digital" data-color="4+4" data-run="900">3&nbsp;610</td><td data-method="digital" data-color="4+4" data-run="1000">3&nbsp;990</td><td data-method="digital" data-color="4+4" data-run="2000">7&nbsp;980</td></tr></tbody></table></div>
       </div>
       <div class="price-block">
         <h3>Офсетная печать <small>тиражи от 2000 до 20 000 шт.</small></h3>
-        <div class="table-wrap" id="ptable-offset"></div>
+        <div class="table-wrap" id="ptable-offset"><table class="ptable"><caption class="visually-hidden">Офсетная печать, визитки 90 × 50 мм, цена за тираж в рублях</caption><thead><tr><th scope="col">Тираж, шт.</th><th scope="col">2&nbsp;000</th><th scope="col">3&nbsp;000</th><th scope="col">4&nbsp;000</th><th scope="col">5&nbsp;000</th><th scope="col">6&nbsp;000</th><th scope="col">8&nbsp;000</th><th scope="col">10&nbsp;000</th><th scope="col">20&nbsp;000</th></tr></thead><tbody><tr><th scope="row">4+0<small>цветная с одной стороны</small></th><td data-method="offset" data-color="4+0" data-run="2000">2&nbsp;243</td><td data-method="offset" data-color="4+0" data-run="3000">3&nbsp;270</td><td data-method="offset" data-color="4+0" data-run="4000">4&nbsp;279</td><td data-method="offset" data-color="4+0" data-run="5000">5&nbsp;525</td><td data-method="offset" data-color="4+0" data-run="6000">6&nbsp;676</td><td data-method="offset" data-color="4+0" data-run="8000">7&nbsp;789</td><td data-method="offset" data-color="4+0" data-run="10000">9&nbsp;388</td><td data-method="offset" data-color="4+0" data-run="20000">15&nbsp;226</td></tr><tr><th scope="row">4+4<small>цветная с двух сторон</small></th><td data-method="offset" data-color="4+4" data-run="2000">2&nbsp;449</td><td data-method="offset" data-color="4+4" data-run="3000">3&nbsp;926</td><td data-method="offset" data-color="4+4" data-run="4000">4&nbsp;816</td><td data-method="offset" data-color="4+4" data-run="5000">6&nbsp;586</td><td data-method="offset" data-color="4+4" data-run="6000">7&nbsp;594</td><td data-method="offset" data-color="4+4" data-run="8000">9&nbsp;607</td><td data-method="offset" data-color="4+4" data-run="10000">11&nbsp;735</td><td data-method="offset" data-color="4+4" data-run="20000">16&nbsp;232</td></tr></tbody></table></div>
       </div>
       <p class="price-note">Подсвеченная ячейка — базовая цена для текущих настроек <a href="#calc-card">калькулятора</a>.</p>
     </div>
@@ -364,14 +362,14 @@
         </div>
       </div>
       <ul class="gallery">
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-1.webp" width="545" height="545" alt="Коричневая визитка с золотым орнаментом" loading="lazy" decoding="async"><figcaption>Тиснение фольгой по дизайнерскому картону</figcaption></figure></li>
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-2.webp" width="545" height="545" alt="Бордовая визитка с серебряным рисунком часов" loading="lazy" decoding="async"><figcaption>Бордовый картон, серебряная фольга</figcaption></figure></li>
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-3.webp" width="545" height="545" alt="Голубая визитка с белым логотипом" loading="lazy" decoding="async"><figcaption>Полноцветная печать</figcaption></figure></li>
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-4.webp" width="545" height="545" alt="Чёрная визитка Arton Capital с золотым логотипом" loading="lazy" decoding="async"><figcaption>Чёрный картон, золотое тиснение</figcaption></figure></li>
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-5.webp" width="545" height="545" alt="Зелёная визитка с тиснением золотой фольгой" loading="lazy" decoding="async"><figcaption>Золотая фольга на зелёном картоне</figcaption></figure></li>
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-6.webp" width="545" height="545" alt="Коричневая визитка с блинтовым тиснением" loading="lazy" decoding="async"><figcaption>Блинтовое тиснение</figcaption></figure></li>
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-7.webp" width="545" height="545" alt="Тёмная визитка с рисунком корабля" loading="lazy" decoding="async"><figcaption>Дизайнерская бумага</figcaption></figure></li>
-        <li><figure class="gallery__item reveal"><img src="../assets/img/vizitki/work-8.webp" width="545" height="545" alt="Визитка с узором, выполненным выборочным лаком" loading="lazy" decoding="async"><figcaption>Выборочный лак</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBACdASoUABQAPuVgpk2pJaOiN/VYASAciUAW2QIdx655kaE3Pk2mF1uwAP7vv0BXm4qU7vVsnlx3jWL2cJ50+TC4dBIQ4faFtN+RSnM70fPnBqxKoRiG/nX8r6yeC1JxgCeEQOvT0NybahiZobV2IRiiP7cZfGCnXAsrfbAAAA==) center/cover" src="../assets/img/vizitki/work-1.webp" width="545" height="545" alt="Коричневая визитка с золотым орнаментом" loading="lazy" decoding="async"><figcaption>Тиснение фольгой по дизайнерскому картону</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBQCdASoUABQAPu1krE4ppaQiKA1RMB2JZADNwA9d5Z9qF2fteZK2VZ6N8xZFy8SAAP7uC7Am+1tC8NVjG+OrkS5JAIdtN28tp7RTVWBY+Nk0zdqvgc8x8iVouOcTo8FLQOoueZsO+qWk08eH1ql9UZbO7ZOxC7ylqjeFDVO+vgRjygFGGZoiDxwzAAAA) center/cover" src="../assets/img/vizitki/work-2.webp" width="545" height="545" alt="Бордовая визитка с серебряным рисунком часов" loading="lazy" decoding="async"><figcaption>Бордовый картон, серебряная фольга</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwBQCdASoUABQAPu1mp02ppaOiMBgMATAdiWwAtRfWTJq3QCh/ZrTwaJ42gCQ7LG6uEiLWcPb1AAD+7guwIxWdTVndfhPA0Zw5LQ/MKQonoricHuMvpLbmdHbAp7DDAUNsr81aoDzimfHLZQrXn+gIbStl6D1itmZEHZXYud4es4gwSjJm45EJTKWDafu+u3wzwJKkAAA=) center/cover" src="../assets/img/vizitki/work-3.webp" width="545" height="545" alt="Голубая визитка с белым логотипом" loading="lazy" decoding="async"><figcaption>Полноцветная печать</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQBACdASoUABQAPu1krU+ppSQiMBgIATAdiWkAE8AAyFhpA+z+I3IqgG7hBhaUAAD+7gpT/F0EuCCvK873mS0wDm919HRHvbVZXv6A/x8k2+67aXjoSPO+2p9kMLYVGc7WmXJ2mZ9fCZIP33gCdPoDMkkA9U0o5u12XNYAAAA=) center/cover" src="../assets/img/vizitki/work-4.webp" width="545" height="545" alt="Чёрная визитка Arton Capital с золотым логотипом" loading="lazy" decoding="async"><figcaption>Чёрный картон, золотое тиснение</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASoUABQAPu1aqU2ppKOiN/VYATAdiWUAwcwQ7j7eU1nXAFT/64WH8xClrwAA/uceOKWWJ4mlZ7Zj1Z34JEpRRiYCGGfhlzq2QniE+XfZojjr2gWlzkK/zRmqE3qSCa3q3v3uljcuoedpY2WUVeIW7iSUUfouOJ4lH7oD1AAA) center/cover" src="../assets/img/vizitki/work-5.webp" width="545" height="545" alt="Зелёная визитка с тиснением золотой фольгой" loading="lazy" decoding="async"><figcaption>Золотая фольга на зелёном картоне</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQBACdASoUABQAPuVep02pJSOiN/VYASAciWcAyRAQ7+7B/E4tTsWHyoUWp4AA/u1GOLORGIeoWj5AxvJ4Ftd2HdJPDpCNxDWp6AKaXkRlTz17orQ+KkJwwMl0xd4GdwlwIVe8VtFdQw11tNQgAA==) center/cover" src="../assets/img/vizitki/work-6.webp" width="545" height="545" alt="Коричневая визитка с блинтовым тиснением" loading="lazy" decoding="async"><figcaption>Блинтовое тиснение</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwBACdASoUABQAPuVepk2pJSOiN/VYASAciWcAwcwQ7NmDUNIMjhRVR7Od+mqn8AAA/ucX9MayTtrVz1EmMhM+dztU8n92RU/t5nx4TSSJHXZtDUFH+1znINxKMbDFxSKs3G1ynTAaWJkP4keBhrZReu0AAA==) center/cover" src="../assets/img/vizitki/work-7.webp" width="545" height="545" alt="Тёмная визитка с рисунком корабля" loading="lazy" decoding="async"><figcaption>Дизайнерская бумага</figcaption></figure></li>
+        <li><figure class="gallery__item"><img style="background:url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQBACdASoUABQAPuVgpk2pJaOjN/VYASAciWUAv+wQ7jW+xSVz5xiStPw24QAA/upwPGgwwGdhwEgAkauKPx0l3x+0HTmGmg5sIZqomD3hCgcbO9+DoGilgUuEMFRH343poLcTLQLwAAAA) center/cover" src="../assets/img/vizitki/work-8.webp" width="545" height="545" alt="Визитка с узором, выполненным выборочным лаком" loading="lazy" decoding="async"><figcaption>Выборочный лак</figcaption></figure></li>
       </ul>
     </div>
   </section>
@@ -497,29 +495,29 @@
         <a class="section-head__link" href="#" data-stub>Весь каталог <svg class="i i--sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
       </div>
       <ul class="products products--related">
-        <li class="product reveal">
-          <div class="product__img"><img src="../assets/img/products/listovki.webp" width="640" height="480" alt="Пачки цветных листовок" loading="lazy" decoding="async"></div>
+        <li class="product">
+          <div class="product__img"><img style="background:url(data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBACdASoUAA8APu1iqU2ppaOiMAgBMB2JbACw7Bj1w+rG+N+mZlvj9QAA/urDmGvIsZu8/V1zhQfcfJpXtxPxZjlsuhe3mW3ZTa2ADifsnFu16cdjn60b8NFk5Xiz+U3+GvuIdwoi4gc8kwftXOsTGuBnsymz9s/t/qL6FgcVELeRYMFyAAAA) center/cover" src="../assets/img/products/listovki.webp" width="640" height="480" alt="Пачки цветных листовок" loading="lazy" decoding="async"></div>
           <div class="product__body"><div><h3 class="product__name"><a href="#" data-stub>Листовки</a></h3><p class="product__price">от <strong>10&nbsp;₽</strong> за шт.</p></div><svg class="i product__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></div>
         </li>
-        <li class="product reveal">
-          <div class="product__img"><img src="../assets/img/products/buklety.webp" width="270" height="202" alt="Буклет-гармошка с меню ресторана" loading="lazy" decoding="async"></div>
+        <li class="product">
+          <div class="product__img"><img style="background:url(data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBACdASoUAA8APu1iqU2ppaOiMAgBMB2JbACdMoR3JoACfzQ74Ht0P/0FxsfHAAD+h8MzDrWkVaxaY8PXp04UHroN2F/tVUQA7wl6OiVcB8m4TMMBBUZTgaFO50ETHlv7fJrMaFiTn1xiFOryhQto0mGfFVqLZSDuLXsgGsIiOskA+LZYVxIwPs3F39UDrcDZKrUFkAA=) center/cover" src="../assets/img/products/buklety.webp" width="270" height="202" alt="Буклет-гармошка с меню ресторана" loading="lazy" decoding="async"></div>
           <div class="product__body"><div><h3 class="product__name"><a href="#" data-stub>Буклеты</a></h3><p class="product__price">от <strong>50&nbsp;₽</strong> за шт.</p></div><svg class="i product__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></div>
         </li>
-        <li class="product reveal">
-          <div class="product__img"><img src="../assets/img/products/nakleyki.webp" width="640" height="480" alt="Лист наклеек-этикеток после вырубки" loading="lazy" decoding="async"></div>
+        <li class="product">
+          <div class="product__img"><img style="background:url(data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwAwCdASoUAA8APu1iqU2ppaOiMAgBMB2JYwCdMoACjZTxl8pfaRQAAPfQoMtA4yQ1UlK1Va6EcXB/07FN5FXVJwKwooLeb/EEo3D0xTjD6x4hi73zyX+4LVygvdHkw9WzK6E0yBMDM2MQVe9MYKGSKcyJflSOnNoUOL3j4pu902FW/vuFueH7cC222v2aIykcjDNXK1ZlIAAA) center/cover" src="../assets/img/products/nakleyki.webp" width="640" height="480" alt="Лист наклеек-этикеток после вырубки" loading="lazy" decoding="async"></div>
           <div class="product__body"><div><h3 class="product__name"><a href="#" data-stub>Наклейки</a></h3><p class="product__price">от <strong>50&nbsp;₽</strong> за шт.</p></div><svg class="i product__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></div>
         </li>
-        <li class="product reveal">
-          <div class="product__img"><img src="../assets/img/products/bloknoty.webp" width="640" height="480" alt="Блокнот с красно-чёрной обложкой" loading="lazy" decoding="async"></div>
+        <li class="product">
+          <div class="product__img"><img style="background:url(data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoUAA8APu1iqU2ppaOiMAgBMB2JbAC7ACIHg63Hn62B/ZPKZAAA/usnXhq1hsyFjXL9l+AI63MGeKMWwOsRNwtdFkb01AQLvlcNxpgr3w0vwYzxh2JqNlwJTazmyHoHFFYpCNwQ6Z/5RQXGAnr6zxVaDdBUKODEAAA=) center/cover" src="../assets/img/products/bloknoty.webp" width="640" height="480" alt="Блокнот с красно-чёрной обложкой" loading="lazy" decoding="async"></div>
           <div class="product__body"><div><h3 class="product__name"><a href="#" data-stub>Блокноты</a></h3><p class="product__price">от <strong>42&nbsp;₽</strong> за шт.</p></div><svg class="i product__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></div>
         </li>
-        <li class="product reveal">
-          <div class="product__img"><img src="../assets/img/products/papki.webp" width="640" height="480" alt="Папка с фирменным орнаментом" loading="lazy" decoding="async"></div>
+        <li class="product">
+          <div class="product__img"><img style="background:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoUAA8APu1iqU2ppaOiMAgBMB2JYgC7AywA70wyPrR3J1nkAAD+lClB3oe5EUi/yXH1KXeL8VCTq/4h7fNCOqX/aCDo8OrcqHgsG1Q5bNSO7854gFftMDk3xKBoS2/hvMlK2AuoG4VEwAAA) center/cover" src="../assets/img/products/papki.webp" width="640" height="480" alt="Папка с фирменным орнаментом" loading="lazy" decoding="async"></div>
           <div class="product__body"><div><h3 class="product__name"><a href="#" data-stub>Папки</a></h3><p class="product__price">от <strong>35&nbsp;₽</strong> за шт.</p></div><svg class="i product__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></div>
         </li>
-        <li class="product reveal">
-          <div class="product__img"><img src="../assets/img/products/kalendari.webp" width="640" height="480" alt="Настольный календарь-домик на пружине" loading="lazy" decoding="async"></div>
-          <div class="product__body"><div><h3 class="product__name"><a href="#" data-stub>Календари</a></h3></div><button class="product__calc" type="button" data-order data-product="календари">Рассчитать</button></div>
+        <li class="product">
+          <div class="product__img"><img style="background:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoUAA8APu1iqU2ppaOiMAgBMB2JZQDG9B4EoTRhkEXEndilTAD+8U20PdgQiX5wuroPj74NbR3WvvxkeDZP/5TRZhW26fclhSKoE6Pe4dC/MiUnc18uos0AAAA=) center/cover" src="../assets/img/products/kalendari.webp" width="640" height="480" alt="Настольный календарь-домик на пружине" loading="lazy" decoding="async"></div>
+          <div class="product__body"><div><h3 class="product__name"><a href="#" data-stub>Календари</a></h3><p class="product__price product__price--request">Цена по запросу</p></div><svg class="i product__arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></div>
         </li>
       </ul>
     </div>
@@ -546,7 +544,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a class="footer__logo" href="../" aria-label="Столичная печать — на главную"><img src="../assets/img/logo.png" width="189" height="125" alt="Столичная печать" loading="lazy"></a>
+        <a class="footer__logo" href="../" aria-label="Столичная печать — на главную"><img style="background:url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACwBACdASoUAA0APu1iqU2ppaQiMAgBMB2JbACdMoRwIsB2AADjmJHobgTC4mwAAP7zc4wXDdfj1H4EZY1MZP8z0mW8dz7yMCv2tEP8ntgrSaFe58Hc92f6T6Fg4fl+MOtrbmrB7PyK0o5420c7Znew9P9/lN3K0aueJwjhNxtT3SQ90Zly+k0isF6bHByRwpTByFE3nLUAAA==) center/cover" src="../assets/img/logo.png" width="189" height="125" alt="Столичная печать" loading="lazy"></a>
         <p>Типография полного цикла в Москве: печать, постпечатная обработка, дизайн и доставка.</p>
       </div>
       <nav aria-labelledby="f-prod">
