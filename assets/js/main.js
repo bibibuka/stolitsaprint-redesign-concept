@@ -85,7 +85,7 @@
       burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
       $('use', burger).setAttribute('href', open ? '#i-x' : '#i-menu');
       mnav.hidden = !open;
-      document.body.classList.toggle('menu-open', open);
+      document.documentElement.classList.toggle('menu-open', open);
       if (open) { var first = $('a, button', mnav); if (first) first.focus(); }
     };
     burger.addEventListener('click', function () { setMenu(mnav.hidden); });
